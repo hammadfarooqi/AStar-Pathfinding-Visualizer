@@ -1,7 +1,7 @@
 # AStar-Pathfinding-Visualizer
 
-python must be downloaded
-pygame, sys are needed
+python must be downloaded.
+pygame, sys are needed.
   Download by doing "pip install pygame" and "pip install sys" in cmd
 
 ## Instructions
@@ -12,6 +12,7 @@ pygame, sys are needed
 
   While space is being pressed, a wall node will be places on any empty node under the mouse.
   While backspace or delete is pressed, any wall node under the mouse will be deleted.
+  Press escape to clear the grid of all nodes except the start and end nodes
 
   Press enter to run the pathfinding algorithm.
   NOTE: Nodes cannot be changed while algorithm is running

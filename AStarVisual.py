@@ -58,7 +58,7 @@ def find_shortest_path(screen, visual_grid, is_selected, real_mouse, clock, diag
             visual_grid[current.y][current.x] = 4
         
         #drawing progress right here
-        clock.tick(40)
+        # clock.tick(40)
 
 
         #THIS SHIT SOMEHOW CAUSES THE ALORITHM TO RUN NONSTOP, WHY?!?!?!
@@ -150,7 +150,7 @@ if __name__ == '__main__':
     grid[0][0] = 1 #Initially adds the start node in the top left
     grid[GRID_SIZE[0]-1][GRID_SIZE[1]-1] = 2 #Initially adds end node in the bottom right
 
-    keys = {K_SPACE:False, K_BACKSPACE:False, K_DELETE:False, K_RETURN:False}
+    keys = {K_SPACE:False, K_BACKSPACE:False, K_DELETE:False, K_RETURN:False, K_ESCAPE: False}
     is_selected = {1: False, 2: False}
 
     mouse_pressed = False
@@ -213,5 +213,12 @@ if __name__ == '__main__':
         #Check if the player is requesting a path
         if keys[K_RETURN] and not True in is_selected.values():
             grid = find_shortest_path(node_screen, grid, is_selected, real_mouse, clock)
+
+        #Check if the player is trying to clear the grid with escape
+        if keys[K_ESCAPE]:
+            for y, row in enumerate(grid):
+                for x, element in enumerate(row):
+                    if element != 1 and element != 2:
+                        grid[y][x] = 0
 
         draw(node_screen, grid, is_selected, real_mouse)

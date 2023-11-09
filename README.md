@@ -7,15 +7,14 @@ The A* Pathfinding Visualizer models a script's line of thinking using an A* Pat
 ## Table of Contents
 - [Controls](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#Controls)
 - [Technologies](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#technologies)
-- [Setup](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#setup)
-- [Authors](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#authors)
 
 ## Controls
 
-- **Text Display:** A scrollable display for the article content that is parsed and autoseparated into sections is displayed on the left.
-- **Quiz Display:** One multiple choice question chosen from the article's question bank is displayed on the right, and after the user answers, they are provided instant audio and visual feedback and a new question.
-- **Formative Assessment:** As the user progresses through the multiple choice questions, Interactpedia uses its built-in algorithm to choose questions for the user about topics they struggle with.
-- **Cognitive Scaffolding Hints:** If the reader are stuck on one question, they can click the hint button that points them to where they can find the answer.
+- Moving Start/End Nodes: Click on the current node location, then click again on the desired location
+- Creating walls: Holding the spacebar while hovering over an empty node will convert it to a wall (You can hold the spacebar and use your mouse as a brush to make chains of walls)
+- Running the simulation: Pressing the return/enter key will run the visualization of the A* pathfinding algorithm
+- Deleting a wall: Holding the backspace or delete key while hovering over a wall will convert it to an empty node
+- Clearing the board: Pressing the escape key will clear all walls and any previous path visualizations
 
 ## Technologies
  - Python <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png" alt="javascript" width="30px">

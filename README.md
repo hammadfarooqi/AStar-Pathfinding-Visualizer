@@ -1,19 +1,22 @@
-# AStar-Pathfinding-Visualizer
+# A* Pathfinding Visualizer
 
-python must be downloaded.
-pygame, sys are needed.
-  Download by doing "pip install pygame" and "pip install sys" in cmd
+![Visualizer Screenshot](./VisualizerScreenshot.png)
 
-## Instructions
-  Click the X to close the window/program.
+The A* Pathfinding Visualizer models a script's line of thinking using an A* Pathfinding algorithm to find the shortest path from one start node to an end node through a user-made maze
 
-  Click on a start or an end node to select it. 
-  Click again on any empty/wall node to place selected node.
+## Table of Contents
+- [Controls](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#Controls)
+- [Technologies](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#technologies)
+- [Setup](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#setup)
+- [Authors](https://github.com/hammadfarooqi/Astar-Pathfinding-Visualizer/#authors)
 
-  While space is being pressed, a wall node will be places on any empty node under the mouse.
-  While backspace or delete is pressed, any wall node under the mouse will be deleted.
-  Press escape to clear the grid of all nodes except the start and end nodes
+## Controls
 
-  Press enter to run the pathfinding algorithm.
-  NOTE: Nodes cannot be changed while algorithm is running
-  NOTE: As of now, window cannot be closed while the algorithm is running
+- **Text Display:** A scrollable display for the article content that is parsed and autoseparated into sections is displayed on the left.
+- **Quiz Display:** One multiple choice question chosen from the article's question bank is displayed on the right, and after the user answers, they are provided instant audio and visual feedback and a new question.
+- **Formative Assessment:** As the user progresses through the multiple choice questions, Interactpedia uses its built-in algorithm to choose questions for the user about topics they struggle with.
+- **Cognitive Scaffolding Hints:** If the reader are stuck on one question, they can click the hint button that points them to where they can find the answer.
+
+## Technologies
+ - Python <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png" alt="javascript" width="30px">
+ - Pygame <img src="https://user-images.githubusercontent.com/46412508/170405943-e75458ec-6cb4-462e-91ba-43c861a3d6cf.png" alt="node.js" width="30px">

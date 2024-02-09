@@ -3,10 +3,8 @@ import math
 
 def heuristic(a, b, diagonals):
     if diagonals:
-        d = math.dist([a.x, a.y], [b.x, b.y])
-    else:
-        d = abs(a.x - b.x) + abs(a.y - b.y)
-    return d
+        return math.dist([a.x, a.y], [b.x, b.y])
+    return abs(a.x - b.x) + abs(a.y - b.y)
 
 
 class Node:
@@ -14,10 +12,7 @@ class Node:
         self.x = x
         self.y = y
 
-        self.g = 0
-        self.h = 0
-        self.f = 0
-
+        self.g, self.h, self.f = 0
         self.neighbors = []
         self.parent = 0
         self.wall = wall

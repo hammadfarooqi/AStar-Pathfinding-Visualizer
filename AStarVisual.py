@@ -61,7 +61,7 @@ def find_shortest_path(screen, visual_grid, is_selected, real_mouse, clock, diag
         # clock.tick(40)
 
 
-        #THIS SHIT SOMEHOW CAUSES THE ALORITHM TO RUN NONSTOP, WHY?!?!?!
+        #THIS SOMEHOW CAUSES THE ALORITHM TO RUN NONSTOP, WHY?!?!?!
         # for event in pygame.event.get(): #ONLY RUNS IF AN EVENT HAS OCCURRED
         # #     #Making X button work
         #     if event.type == QUIT:
